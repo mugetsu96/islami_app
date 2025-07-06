@@ -1,20 +1,23 @@
 import 'package:flutter/material.dart';
+import 'package:islami_app/app_theme.dart';
+import 'package:islami_app/screens/home_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const IslamiApp());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class IslamiApp extends StatelessWidget {
+  const IslamiApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+    return MaterialApp(
+      themeMode: ThemeMode.dark,
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      debugShowCheckedModeBanner: false,
+      initialRoute: HomeScreen.routeName,
+      routes: {HomeScreen.routeName: (_) => HomeScreen()},
     );
   }
 }
