@@ -393,8 +393,8 @@ class SuraListView extends StatelessWidget {
               Visibility(
                 visible: (index < arabicSuraNames.length - 1),
                 child: Divider(
-                  indent: 30,
-                  endIndent: 30,
+                  indent: 20,
+                  endIndent: 20,
                   thickness: 1,
                   color: Colors.white,
                 ),
