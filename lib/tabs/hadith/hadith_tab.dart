@@ -5,6 +5,6 @@ class HadithTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text('Hadith')));
+    return Center(child: Text('Hadith'));
   }
 }
